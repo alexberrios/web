@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS2 Server Config Generator</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="https://styles.redditmedia.com/t5_6himry/styles/communityIcon_6k029qv05zqb1.png">
+</head>
+<body>
+    <h2>CS2 Server Config Generator</h2>
+    <form id="configForm">
+        <!-- Tiempo de Ronda -->
+        <div>
+            <label for="roundTime">Tiempo de Ronda (minutos):</label>
+            <input type="text" id="roundTime" name="roundTime" required>
+        </div>
+        <!-- Límite de Puntuación -->
+        <div>
+            <label for="scoreLimit">Límite de Puntuación:</label>
+            <input type="number" id="scoreLimit" name="scoreLimit" required>
+        </div>
+        <!-- Límite de Jugadores -->
+        <div>
+            <label for="playerLimit">Límite de Jugadores:</label>
+            <input type="number" id="playerLimit" name="playerLimit" required>
+        </div>
+        <!-- Modo de Juego -->
+        <div>
+            <label for="gameMode">Modo de Juego:</label>
+            <select id="gameMode" name="gameMode">
+                <option value="Casual">Casual</option>
+                <option value="Competitivo">Competitivo</option>
+                <option value="Deathmatch">Deathmatch</option>
+                <option value="Custom">Custom</option>
+            </select>
+        </div>
+        <!-- Fuego Amigo -->
+        <div>
+            <label for="friendlyFire">Fuego Amigo:</label>
+            <input type="checkbox" id="friendlyFire" name="friendlyFire">
+        </div>
+        <!-- Nombre del Servidor -->
+        <div>
+            <label for="hostname">Nombre del servidor:</label>
+            <input type="text" id="hostname" name="hostname" required>
+        </div>
+        <!-- Clave RCON -->
+        <div>
+            <label for="rconPassword">Clave RCON:</label>
+            <input type="text" id="rconPassword" name="rconPassword" required>
+        </div>
+        <!-- Clave del Servidor -->
+        <div>
+            <label for="svPassword">Clave del servidor:</label>
+            <input type="text" id="svPassword" name="svPassword">
+        </div>
+        <!-- Solo Daño por Disparo en la Cabeza -->
+        <div>
+            <label for="mpDamageHeadshotOnly">Solo daño por disparo en la cabeza:</label>
+            <input type="checkbox" id="mpDamageHeadshotOnly" name="mpDamageHeadshotOnly">
+        </div>
+         <!-- Dinero para Partir -->
+         <div>
+            <label for="startMoney">Dinero para partir (mp_startmoney):</label>
+            <input type="number" id="startMoney" name="startMoney" required>
+        </div>
+
+        <!-- Tiempo de Compra -->
+        <div>
+            <label for="buyTime">Tiempo de compra (mp_buytime):</label>
+            <input type="number" id="buyTime" name="buyTime" required>
+        </div>
+
+        <!-- Comprar en Cualquier Lado -->
+        <div>
+            <label for="buyAnywhere">Comprar en cualquier lado (mp_buy_anywhere):</label>
+            <input type="checkbox" id="buyAnywhere" name="buyAnywhere">
+        </div>
+
+        <div>
+            <label for="randomRespawn">Comprar en cualquier lado TT y CT:</label>
+            <input type="checkbox" id="randomRespawn" name="randomRespawn">
+        </div>
+
+        <!-- freezetime -->
+        <div>
+            <label for="freezeTime">Tiempo de espera (mp_freezetime):</label>
+            <input type="number" id="freezeTime" name="freezeTime" required>
+        </div>
+
+        <div class="subtitle">
+            <h3>Configuración de entrenamiento</h3>
+        </div>
+
+        <!-- Entrenamiento -->
+        <div>
+            <label for="cheats">Trampas:</label>
+            <input type="checkbox" id="cheats" name="cheats">
+        </div>
+        <!-- Modo de Juego -->
+        <div>
+            <label for="infiniteAmmo">Infinite ammo:</label>
+            <select id="infiniteAmmo" name="infiniteAmmo">
+                <option value="todas">todas</option>
+                <option value="solo granadas">solo granadas</option>
+            </select>
+        </div>
+
+
+        <!-- Botón para generar el archivo CFG -->
+        <button type="submit">Generar CFG</button>
+    </form>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

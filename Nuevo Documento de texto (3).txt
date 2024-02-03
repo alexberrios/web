@@ -1,0 +1,37 @@
+rcon adress
+rcon port
+
+Dinero para partir (mp_startmoney)
+Tiempo de compra (mp_buytime)
+Comprar en cualqueir lado (mp_buy_anywhere)
+Armas en el suelo (para mapas aim_map, nose que comando o modo es)
+Respawn aleatorio/normal (mp_respawn_on_death_ct 1 mp_respawn_on_death_t 1)
+Revivir luego de morir rápido (modo dm)/revivir luego de que mueran todes
+host_workshop_collection (espacio para agregar la colección)
+Freezetime
+Granadas infinitas
+Balas infinitas
+Sv_cheats
+Bots (CT 00-xx) (TT 00-xx), sin bots
+Team balance 
+Time out (si/no/tiempo, si no se puede, filo con el tiempo)
+mp_warmup_end (1/0)
+
+
+
+Agregar algún "echo" (-------¡Mr.Lápiz OUNUM, CFG Cargada!-------)
+Arreglar el modo hs (al ponerle ticket no queda en 1), al igual que el fuego amigue
+Que siempre al cargar la config te haga un reset (mp_restartgame 1)
+los max y min rate, para que sirven?? (están en el que me enviaste)
+
+
+Lista exec (funcionarían llamando al modo)
+gamemode_armsrace.cfg
+gamemode_casual.cfg
+gamemode_competitive.cfg
+gamemode_cooperative.cfg
+gamemode_coopmission.cfg
+gamemode_deathmatch.cfg
+gamemode_demolition.cfg
+gamemode_dm_freeforall.cfg
+gamemode_teamdeathmatch.cfg
